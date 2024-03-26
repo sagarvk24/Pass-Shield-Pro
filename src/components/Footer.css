@@ -1,0 +1,178 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 80px;
+
+
+    padding: 20px 0;
+    /* Add padding to top and bottom */
+}
+
+.foot {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    bottom: 0;
+    /* border: 4px ridge black; */
+    text-transform: uppercase;
+    font-size: 25px;    
+    height: 150px;
+    width: 100vw;
+    /* line-height: 40px;  */
+    /* text-align: center; */
+    font-weight: bold;
+    padding: 5px;
+    /* background: linear-gradient(to bottom, #4169E1, #00008B); */
+    /* background: linear-gradient(135deg, #000000, #2D3436); */
+
+}
+
+
+/* 
+/* .background-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+} */ */
+
+.headline {
+    font-family: Arial, sans-serif;
+    /* Choose a strong font */
+    font-size: 25px;
+    /* Adjust font size as needed */
+    font-weight: bold;
+    /* Make the text bold */
+    color: #ffffff;
+    text-transform: uppercase;
+    /* Convert text to uppercase for emphasis */
+    /* Set text color to white */
+    text-shadow: 2px 2px 4px 5px 2px rgba(0, 0, 0, 0.5);
+    /* Add a subtle shadow for depth */
+    letter-spacing: 1px;
+    /* Increase letter spacing for readability */
+}
+
+
+
+.logo-box {
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+    height: 70px;
+    /* width: 600px; */
+    background-color: transparent;
+}
+
+/* .logo-box img {
+    transition: box-shadow 0.3s ease-in-out;
+    height: 100%;
+    background-color: transparent;
+
+}
+
+.logo-box img:hover {
+    box-shadow: 0 0 20px #fff, 0 0 40px #0ff, 0 0 60px #0ff, 0 0 80px #0ff;
+} */
+
+
+.logo-box img {
+    transition: transform 0.3s ease;
+
+}
+
+.logo-box img:hover {
+    transform: rotate(720deg);
+    /* Rotate the image 360 degrees on hover */
+}
+
+#vite {
+    /* filter: invert(100%); */
+    height: 80px;
+}
+
+#toast {
+    margin-top: 10px;
+    height: 50px;
+    width: 160px;
+    border-radius: 20px;
+
+}
+
+
+#cordova {
+    filter: invert(100%);
+    transition: transform 0.8s ease-in-out;
+}
+
+#cordova:hover {
+    transform: scale(1.1);
+}
+
+#plus {
+    filter: invert(100%);
+}
+
+#toast {
+    transition: transform 0.8s ease-in-out;
+}
+
+#toast:hover {
+    transform: scale(1.1);
+}
+
+
+#jsx {
+    transition: transform 0.4s ease-in-out;
+}
+
+#jsx:hover {
+    transform: rotate(30deg) translateY(12px);
+}
+
+#three {
+    transition: transform 0.4s ease-in-out;
+}
+
+#three:hover {
+    transform: scale(1.5) rotate(560deg);
+}
+
+#tail {
+    filter: invert(100%);
+    transition: transform 1.2s ease-in-out;
+}
+
+#tail:hover {
+    transform: scale(1.2);
+}
+
+#ex {
+    transition: transform 0.8s ease-in-out;
+    filter: invert(100%);
+}
+
+#ex:hover {
+    transform: scale(1.1);
+}
+
+#mongo {
+    transition: transform 1.2s ease-in-out;
+}
+
+#mongo:hover {
+    transform: translateX(20px);
+}

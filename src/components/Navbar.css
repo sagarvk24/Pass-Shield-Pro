@@ -1,0 +1,121 @@
+@keyframes strike {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    35% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes strike-image {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#lock {
+    height: 45px;
+    width: 50px;
+    background: transparent;
+}
+
+span{
+    color:black
+}
+
+.navbar {
+    /* background: linear-gradient(to right, #3c0066, #4aacd3, #8a2be2); */
+    /* background:  linear-gradient(to right,#000000, #D2A813); */
+    height:90px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px; /* Add your desired padding values */
+}
+
+.strike-animation {
+    animation: strike 1s ease-in-out;
+}
+
+.strike2-animation {
+    animation: strike-image 2s ease-out;
+    margin-left: 4px;
+}
+
+#lock {
+    height: 45px;
+    width: 50px;
+    background: transparent;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.navbar {
+    height: 90px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+
+}
+
+.font-extrabold {
+    font-weight: 800;
+}
+
+.navbar div {
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.navbar span {
+    margin-left:3px; /* Adjust spacing between lock image and text */
+}
+
+
+.title span{
+    font-size: 34px;
+}
+
+.button{
+    color:#fff9f9;
+    position: absolute;
+    right: 5%;
+    padding: 10px;
+    border-radius: 12px;
+    margin-right: 10px;
+    background-color: crimson;
+    width: 210px;
+}
+
+.button button{
+    height:70px;
+}
