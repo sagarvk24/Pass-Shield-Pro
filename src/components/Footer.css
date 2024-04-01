@@ -2,8 +2,6 @@
     position: fixed;
     bottom: 0;
     height: 80px;
-
-
     padding: 20px 0;
     /* Add padding to top and bottom */
 }
@@ -12,12 +10,12 @@
     position: relative;
     z-index: 1;
     color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     bottom: 0;
     /* border: 4px ridge black; */
-    text-transform: uppercase;
-    font-size: 25px;    
-    height: 150px;
+
+    font-size: 25px;
+    height: 180px;
     width: 100vw;
     /* line-height: 40px;  */
     /* text-align: center; */
@@ -47,16 +45,14 @@
     height: 100%;
     object-fit: cover;
     opacity: 0.9;
-} */ */
-
+} */
 .headline {
-    font-family: Arial, sans-serif;
-    /* Choose a strong font */
+
     font-size: 25px;
     /* Adjust font size as needed */
     font-weight: bold;
     /* Make the text bold */
-    color: #ffffff;
+    color: #377cfc;
     text-transform: uppercase;
     /* Convert text to uppercase for emphasis */
     /* Set text color to white */
@@ -64,6 +60,7 @@
     /* Add a subtle shadow for depth */
     letter-spacing: 1px;
     /* Increase letter spacing for readability */
+    font-family:Play;
 }
 
 
@@ -71,10 +68,10 @@
 .logo-box {
     margin-left: 20px;
     display: flex;
-    gap: 20px;
+    gap: 26px;
     height: 70px;
     /* width: 600px; */
-    background-color: transparent;
+    /* background-color: transparent ; */
 }
 
 /* .logo-box img {
@@ -99,11 +96,6 @@
     /* Rotate the image 360 degrees on hover */
 }
 
-#vite {
-    /* filter: invert(100%); */
-    height: 80px;
-}
-
 #toast {
     margin-top: 10px;
     height: 50px;
@@ -123,11 +115,18 @@
 }
 
 #plus {
+    margin-left: 0px;
     filter: invert(100%);
+    transition: transform 0.2s ease-in-out;
+}
+
+#plus:hover {
+    transform: scale(1.5);
 }
 
 #toast {
     transition: transform 0.8s ease-in-out;
+    /* filter: invert(); */
 }
 
 #toast:hover {
@@ -152,16 +151,16 @@
 }
 
 #tail {
-    filter: invert(100%);
-    transition: transform 1.2s ease-in-out;
+    /* filter: invert(100%); */
+    transition: transform 0.2s ease-in-out;
 }
 
 #tail:hover {
-    transform: scale(1.2);
+    transform: rotate(720deg);
 }
 
 #ex {
-    transition: transform 0.8s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     filter: invert(100%);
 }
 
@@ -176,3 +175,23 @@
 #mongo:hover {
     transform: translateX(20px);
 }
+
+
+.created span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(25, 25, 25, 0.7);
+    /* Dark background color */
+    padding: 10px 0;
+    /* Padding on top and bottom */
+    text-align: center;
+    /* Center-align the text */
+    font-family: Rajdhani;
+    /* Choose a professional font */
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+

@@ -40,19 +40,15 @@
     height: 45px;
     width: 50px;
     background: transparent;
+    transition: transform 0.3s ease;
 }
 
-span{
-    color:black
+#lock:hover{
+    transform: rotate(40deg);
 }
 
-.navbar {
-    /* background: linear-gradient(to right, #3c0066, #4aacd3, #8a2be2); */
-    /* background:  linear-gradient(to right,#000000, #D2A813); */
-    height:90px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px; /* Add your desired padding values */
+span {
+    color: black
 }
 
 .strike-animation {
@@ -76,19 +72,114 @@ span{
 
 .navbar {
     height: 90px;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: #dbfbf9;
+    /* background: linear-gradient(135deg, #98f8f3, #008b8b); */
+    /* background: linear-gradient(135deg, #40A2D8, #0E5D94); */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
     display: flex;
-    justify-content: center; /* Align items horizontally */
-    align-items: center; /* Align items vertically */
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    /* Align items horizontally */
+    align-items: center;
+    z-index: 2;
+    /* Align items vertically */
+    box-shadow: inset 0 0 23px rgba(22, 69, 131, 0.7);
 
 }
 
-.font-extrabold {
-    font-weight: 800;
+.dropdown {
+    position: absolute;
 }
+
+/* .dropdown-menu li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    border: none; 
+    color: black; 
+    padding: 0 1rem; 
+    font-size: 1rem; } */
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    /* Ensure inline-block display for horizontal alignment */
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    font-size: 17px;
+    text-shadow: 1px 0.5px 0.5px;
+    margin: 0;
+    font-family: Play;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-btn:hover {
+    background-color: #69caff;
+    color: black
+
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    /* background-color: #c2f98f; */
+    background-color: rgb(61, 57, 57);
+    border: none;
+    border-radius: 13px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    display: none;
+    white-space: nowrap;
+    /* Prevent line breaks */
+    opacity: 0;
+    /* Initially set opacity to 0 */
+    transition: opacity 0.7s ease;
+    /* Add transition effect */
+
+}
+
+.dropdown-menu li {
+    display: inline-block;
+    /* Display menu items horizontally */
+    margin-right: 1rem;
+    /* Adjust spacing between menu items */
+}
+
+.dropdown-item{
+    color: #fff;
+    border-radius: 12px;
+    transition: background-color 0.7s ease, border-radius 0.4s ease;
+}
+
+.dropdown-menu li a{
+    font-family: Poppins;
+}
+
+.dropdown-item:hover {
+    background-color: #a5f6fa;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    /* Change opacity to 1 on hover */
+
+}
+
 
 .navbar div {
     display: flex;
@@ -97,25 +188,104 @@ span{
 }
 
 .navbar span {
-    margin-left:3px; /* Adjust spacing between lock image and text */
+    margin-left: 3px;
+    /* Adjust spacing between lock image and text */
 }
 
 
-.title span{
+.title span {
     font-size: 34px;
 }
 
-.button{
-    color:#fff9f9;
+.button {
+    /* color:#fff9f9; */
+    color: #c0c0c0;
     position: absolute;
     right: 5%;
-    padding: 10px;
+    padding: 5px;
     border-radius: 12px;
     margin-right: 10px;
-    background-color: crimson;
-    width: 210px;
+    width: 187px;
+    font-weight: 400;
 }
 
-.button button{
-    height:70px;
+.button button {
+    height: 70px;
+}
+
+.button a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    /* Remove underline from anchor tag */
+}
+
+.button img {
+    margin-right: 2px;
+    /* Adjust spacing between image and text */
+}
+
+
+.button {
+    font-family: Russo One;
+    display: inline-block;
+    /* background: linear-gradient(135deg, #2c3e50, #3498db, #2c3e50); */
+    background: linear-gradient(135deg, #6C63FF, #00F0FF);
+
+    /* GitHub's primary color */
+    color: #fff;
+    border-radius: 10px;
+    font-size: 19px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: background 0.4s ease-in-out;
+    /* Add transition for background */
+}
+
+.button:hover {
+    color: black;
+    background: linear-gradient(to right, #1abc9c, #ff62d0, #f9c74f);
+}
+
+.button img {
+    height: 50px;
+    vertical-align: middle;
+    width: 50px;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.button img:hover {
+    transform: rotate(720deg);
+    filter: invert();
+}
+
+.button span {
+    transition: transform 0.3s ease-out;
+    /* color: #dff7ff; */
+    color: rgb(31, 30, 30);
+}
+.button span:hover {
+    transform: scale(1.1);
+    cursor: none;
+}
+
+.button {
+    transition: box-shadow 0.3s ease-in-out, transform 0.5s ease-out;
+    background-color: transparent;
+
+}
+
+.button:hover {
+    border: 2px ridge rgb(162, 231, 162);
+    transform: scale(0.92);
+    /* Adjust the scale factor as needed */
+    box-shadow: 0 0 10px rgba(87, 0, 0, 0.5);
+    /* Adjust the shadow color and spread as needed */
+}
+
+
+
+.passbox {
+    width: 370px;
 }
