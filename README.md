@@ -42,7 +42,7 @@ PassShield Pro is a secure and user-friendly web application designed to simplif
 - Backend
   1. Node.js
   2. Express.js
-  3. MongoDB via Mongoose
+  3. MongoDB via npm Mongo
 
 - Other Dependencies
   1. Bootstrap
