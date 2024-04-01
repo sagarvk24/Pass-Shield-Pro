@@ -2,7 +2,7 @@
 
 ## **Project Description**
 
-Password Manager is a web application that helps users securely store and manage their passwords for various online accounts. It provides a convenient and centralized solution for organizing passwords while maintaining security.
+PassShield Pro is a secure and user-friendly web application designed to simplify password management. With robust encryption, intuitive interface, and convenient features like auto-generation of strong passwords and password sharing, it offers a seamless solution for organizing and accessing passwords securely. Accessible across multiple platforms, PassShield Pro prioritizes user privacy and data protection, making it an essential tool for individuals and organizations alike.
 
 ## **Installation**
 
